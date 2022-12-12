@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="src/styles/reset.css" rel="stylesheet">
+        <link href="src/styles/style.css" rel="stylesheet">
+        <title>Web Forms</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__form">
+                <h1 class="container__title">Create an Account</h1>
+                <form class="form">
+                    <div class="form__flex indent">
+                        <div class="form__item form__item-flex">
+                            <label for="name" class="form__label">First Name</label>
+                            <input type="text" class="form__input" name="name" id="name" required>
+                        </div>
+                        <div class="form__item form__item-flex">
+                            <label for="last-name" class="form__label">Last Name</label>
+                            <input type="text" class="form__input" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form__item-flex indent">
+                        <label for="mail" class="form__label">E-mail</label>
+                        <input type="email" class="form__input" name="mail" id="mail" required>
+                        <p class="form__item-text">We'll never share your email with anyone else.</p>
+                    </div>
+                    <div class="form__item-flex-radio indent">
+                        <div class="radio">
+                            <label for="male" class="form__label container-radio">Male
+                                <input type="radio" name="gender" id="male" value="male" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="female" class="form__label container-radio">Female
+                                <input type="radio" name="gender" id="female" value="female">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__flex indent">
+                        <div class="form__item form__item-flex">
+                            <label for="country" class="form__label">Country</label>
+                            <select class="form__input select" name="country" id="country">
+                                <option value="" disabled selected hidden>Choose your country</option>
+                                <optgroup label="Asia">
+                                    <option value="china">China</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="malasia">Malaysia</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="italy">Italy</option>
+                                </optgroup>
+                                <optgroup label="America">
+                                    <option value="brazil">Brazil</option>
+                                    <option value="angertina">Argentina</option>
+                                    <option value="usa">USA</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form__item form__item-flex">
+                            <label for="city" class="form__label">City</label>
+                            <input type="text" class="form__input" name="city" id="city">
+                        </div>
+                    </div>
+                    <input type="submit" class="button indent" value="Sign Up">
+                </form>
+                <div class="container-terms indent">
+                    <div class="terms">
+                        <p class="terms__text form__item-text">
+                            By clicking the 'Sign Up' button, you confirm that you accept our
+                        </p>
+                        <p class="terms__text form__item-text">
+                            <a href="#" class="terms__link link">Terms of Use</a> and
+                            <a href="#" class="terms__link link">Privacy Policy</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="log-in">
+                    <p class="form__label">Have an account?</p>
+                    <a href="#" class="form__label log link">Log In</a>
+                </div>
+            </div>
+            <div class="container__form">
+                <h2 class="container__title">Profile</h2>
+                <form>
+                    <div class="form__flex-photo indent">
+                        <div class="image">
+                            <img src="src/img/photo.png" alt="user pic">
+                        </div>
+                        <div class="upload">
+                                <label for="photo" class="upload-photo">
+                                    <img class="upload__img" src="src/img/camera.svg" alt="camera icon">
+                                </label>
+                            <input type="file" class="form__input photo" name="photo" id="photo">
+                            <p class="form__item-text">Up to 1 MB (300x300 px)</p>
+                        </div>
+                        <div class="trash">
+                            <button class="trash__button" type="button">
+                                <img class="trash__position" src="src/img/trash.svg" alt="trash">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form__flex indent">
+                        <div class="form__item form__item-flex">
+                            <label for="uname" class="form__label">Name</label>
+                            <input type="text" class="form__input" name="name" id="uname" required>
+                        </div>
+                        <div class="form__item form__item-flex">
+                            <label for="email" class="form__label">E-mail</label>
+                            <input type="email" class="form__input" name="mail" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form__flex indent">
+                        <div class="form__item form__item-flex">
+                            <label for="country-u" class="form__label">Country</label>
+                            <select class="form__input select" name="country" id="country-u">
+                                <option value="" disabled selected hidden>Choose your country</option>
+                                <optgroup label="Asia">
+                                    <option value="china">China</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="malasia">Malaysia</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                    <option value="ukraine">Ukraine</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="italy">Italy</option>
+                                </optgroup>
+                                <optgroup label="America">
+                                    <option value="brazil">Brazil</option>
+                                    <option value="angertina">Argentina</option>
+                                    <option value="usa">USA</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form__item form__item-flex">
+                            <label for="city-u" class="form__label">City</label>
+                            <input type="text" class="form__input" name="city" id="city-u">
+                        </div>
+                    </div>
+                    <div class="form__flex indent">
+                        <div class="form__item form__item-flex">
+                            <label for="zip" class="form__label">Zip Code</label>
+                            <input type="text" class="form__input" name="zip-code" id="zip">
+                        </div>
+                        <div class="form__item form__item-flex">
+                            <label for="phone" class="form__label">Phone Number</label>
+                            <input type="tel" class="form__input" name="phone" id="phone" required>
+                        </div>
+                    </div>
+                    <input type="submit" class="button button-update indent" value="Update">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
