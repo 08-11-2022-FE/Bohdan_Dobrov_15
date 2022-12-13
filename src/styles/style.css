@@ -156,6 +156,10 @@ body {
     border-radius: 6px;
 }
 
+.trash__button:hover {
+    border-color: blue;
+}
+
 .trash__position {
     position: absolute;
     top: 50%;
@@ -173,6 +177,10 @@ body {
     border-radius: 6px;
     margin-bottom: 9px;
     position: relative;
+}
+
+.upload-photo:hover {
+    border-color: blue;
 }
 
 .upload__img {
